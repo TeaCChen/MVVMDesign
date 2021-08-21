@@ -1,0 +1,3 @@
+include ':mvvmbase'
+include ':app'
+rootProject.name = "MVVMDesign"
