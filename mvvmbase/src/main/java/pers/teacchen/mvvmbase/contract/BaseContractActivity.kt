@@ -35,7 +35,6 @@ abstract class BaseContractActivity<
      * Activity override
      */
 
-    @Suppress("UNCHECKED_CAST")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         _viewBinding = inflateBinding(this, layoutInflater)

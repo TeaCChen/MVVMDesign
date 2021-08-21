@@ -22,7 +22,7 @@ internal fun <VB : ViewBinding> inflateBinding(
     contractHost: Any,
     inflater: LayoutInflater
 ): VB {
-    val type = contractHost.javaClass as ParameterizedType
+    val type = contractHost.javaClass.genericSuperclass as ParameterizedType
     val clazz = type.actualTypeArguments[0] as Class<VB>
     val method = clazz.getMethod("inflate", LayoutInflater::class.java)
     return method.invoke(null, inflater) as VB

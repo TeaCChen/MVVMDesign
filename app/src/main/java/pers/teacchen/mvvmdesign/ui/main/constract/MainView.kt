@@ -1,7 +1,6 @@
 package pers.teacchen.mvvmdesign.ui.main.constract
 
 import pers.teacchen.mvvmbase.contract.IViewHost
-import pers.teacchen.mvvmdesign.ui.main.constract.MainContract
 
 /**
  * @ClassName: MainView
