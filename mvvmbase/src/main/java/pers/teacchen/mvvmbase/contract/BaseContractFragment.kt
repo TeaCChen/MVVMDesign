@@ -37,8 +37,7 @@ abstract class BaseContractFragment<
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _viewBinding =
-            inflateBinding(this, inflater)
+        _viewBinding = inflateBinding(this, inflater)
         return viewBinding.root
     }
 
